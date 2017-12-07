@@ -1,0 +1,138 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="app.roque.com.studialquilerapp.fragments.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/bg_inmueble"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageProfile"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:paddingTop="16dp"
+                        tools:src="@drawable/img_profile"
+                        android:layout_marginTop="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/nombresProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        tools:text="Nombres"
+                        android:textSize="28sp"/>
+                    <TextView
+                        android:id="@+id/apellidosProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp"
+                        tools:text="Apellidos"
+                        android:textSize="28sp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/backgroundtext_card"/>
+
+                <TextView
+                    android:id="@+id/usernameProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:drawableLeft="@drawable/ic_account_outline"
+                    android:drawablePadding="8dp"
+                    tools:text="Username"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:id="@+id/correoProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:drawableLeft="@drawable/ic_at"
+                    android:drawablePadding="8dp"
+                    tools:text="Correo"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/tipoProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:drawableLeft="@drawable/ic_account_multiple_outline"
+                    android:drawablePadding="8dp"
+                    tools:text="Tipo de usuario"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:id="@+id/telefonoProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawablePadding="8dp"
+                    tools:text="Telefono"
+                    android:textSize="24sp"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_account_edit"
+        app:borderWidth="0dp"
+        app:elevation="10dp"
+        app:fabSize="normal"
+        android:backgroundTint="#E91E63"
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="32dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

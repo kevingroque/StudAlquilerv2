@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/ic_list"
+            android:title="Lista de Inmuebles" />
+
+        <item
+            android:id="@+id/nav_mis_inmuebles"
+            android:icon="@drawable/ic_rental"
+            android:title="Mis Inmuebles" />
+
+        <item
+            android:id="@+id/nav_centros"
+            android:icon="@drawable/ic_dash_board"
+            android:title="Centros Educativos" />
+
+        <item
+            android:id="@+id/nav_new"
+            android:icon="@drawable/ic_create"
+            android:title="Agregar Inmueble" />
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/ic_maps"
+            android:title="Mapa" />
+
+    </group>
+
+    <item android:title="Logout">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_profile_black"
+                android:title="Mis Datos" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_logout"
+                android:title="Salir" />
+        </menu>
+    </item>
+
+</menu>

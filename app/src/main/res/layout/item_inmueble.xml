@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/picture_card"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    cardView:cardCornerRadius="5dp"
+    android:layout_marginBottom="12dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/pictureCard"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bg_inmueble"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:paddingLeft="32dp"
+            android:paddingBottom="32dp"
+            android:background="@color/backgroundtext_card">
+
+            <TextView
+                android:id="@+id/tipoInmueble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departamento"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/direccionInmueble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direccion"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/precioInmueble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>
